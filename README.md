@@ -1,175 +1,170 @@
-# Rock Paper Scissors Game
+Rock Paper Scissors Game 🎮
 
-## 1. Project Description
+A simple and interactive Rock Paper Scissors game developed using Python. The project is designed using multiple Python modules, with each file responsible for a specific part of the application.
 
-Rock Paper Scissors is a simple Python-based game in which the player plays against the computer.
+📌 Project Description
 
-The computer randomly chooses Rock, Paper, or Scissors. The player also chooses one option, and the program compares both choices to determine the winner.
+Rock Paper Scissors is a game played between a user and the computer. The player selects Rock, Paper, or Scissors, while the computer makes a random choice.
 
-The project is divided into different Python modules so that each part of the program has a specific responsibility.
+The program compares both choices and determines whether the player wins, the computer wins, or the round is a draw.
 
-## 2. Features
+The project also keeps track of the scores and provides a simple menu for playing the game, viewing instructions, checking scores, and exiting the application.
 
-* Play Rock Paper Scissors against the computer
-* Computer makes a random choice
-* Player score tracking
-* Computer score tracking
-* Tie tracking
-* Game history
-* Save and load game history
-* View game statistics
-* Player win percentage
-* Input validation
-* Menu-based interface
-* Multiple Python modules
-
-## 3. Rules of the Game
-
-The rules are:
-
-* Rock beats Scissors
-* Scissors beats Paper
-* Paper beats Rock
-* If both players choose the same option, the game is a tie
-
-## 4. Technologies Used
-
-* Python
-* JSON
-* Visual Studio Code
-* Git
-* GitHub
-
-## 5. Project Structure
-
-```text
-Rock-Paper-Scissors/
+🎯 Objectives
+Develop a Rock Paper Scissors game using Python.
+Practice Python functions, classes, conditions, and loops.
+Use multiple Python files/modules.
+Generate random choices for the computer.
+Maintain player and computer scores.
+Validate user input.
+Create a simple menu-driven application.
+✨ Features
+🎮 Play Rock Paper Scissors against the computer.
+🤖 Computer makes a random choice.
+🏆 Automatically determines the winner.
+📊 Keeps track of player score, computer score, and draws.
+📖 Displays game instructions.
+🔄 Allows the player to play multiple rounds.
+✅ Validates incorrect user input.
+📋 Simple and easy-to-use menu.
+🗂️ Project Structure
+RockPaperScissors/
 │
 ├── main.py
 ├── game.py
+├── player.py
 ├── score.py
-├── validation.py
-├── history.py
-├── storage.py
-├── statistics.py
-├── display.py
-├── README.md
-└── game_history.json
-```
+├── menu.py
+├── utils.py
+└── README.md
+📁 File Description
+File	Description
+main.py	Starts and controls the whole program
+game.py	Contains Rock-Paper-Scissors game logic
+player.py	Handles player and computer choices
+score.py	Keeps track of scores
+menu.py	Displays menu and instructions
+utils.py	Input validation and helper functions
+README.md	Project documentation
+🎲 Game Rules
 
-## 6. Description of Files
+The game follows these rules:
 
-### main.py
+Rock beats Scissors
+Scissors beats Paper
+Paper beats Rock
+If both choices are the same, the result is a Draw
+Example
+Player: Rock
+Computer: Scissors
 
-The main file of the project. It controls the menu and connects all the different modules.
+Result: Player Wins!
+🛠️ Technologies Used
+Python 3
+Visual Studio Code
+Git
+GitHub
+▶️ How to Run the Project
+1. Install Python
 
-### game.py
+Make sure Python 3 is installed on your computer.
 
-Contains the main game logic. It generates the computer's choice and determines the winner.
+You can check it using:
 
-### score.py
+python --version
+2. Open the Project
 
-Keeps track of player wins, computer wins, and ties.
+Open the RockPaperScissors folder in Visual Studio Code.
 
-### validation.py
+3. Open the Terminal
 
-Checks whether the player's input is valid.
+In VS Code, select:
 
-### history.py
+Terminal → New Terminal
+4. Run the Program
 
-Stores and displays the results of the games played.
+Type:
 
-### storage.py
-
-Saves and loads game history using a JSON file.
-
-### statistics.py
-
-Calculates total games, player wins, computer wins, ties, and player win percentage.
-
-### display.py
-
-Contains functions for displaying the title, menu, round information, and game results.
-
-### game_history.json
-
-Stores the game history so that it can be accessed again when the program is run.
-
-## 7. How to Run the Project
-
-### Step 1
-
-Install Python on your computer.
-
-### Step 2
-
-Open the project folder in Visual Studio Code.
-
-### Step 3
-
-Open the VS Code terminal.
-
-### Step 4
-
-Run the following command:
-
-```text
 python main.py
-```
 
-### Step 5
+and press Enter.
 
-Select an option from the menu.
-
-## 8. Main Menu
-
-The program provides the following options:
-
-```text
+🖥️ Example Output
+==============================
+     ROCK PAPER SCISSORS
+==============================
 1. Play Game
-2. View Score
-3. View Game History
-4. View Statistics
-5. Exit
-```
+2. View Instructions
+3. View Score
+4. Exit
+==============================
 
-## 9. Example
+Enter your choice (1-4): 1
 
-```text
-================================
-      ROCK PAPER SCISSORS
-================================
+----- NEW ROUND -----
 
----------- MENU ----------
-1. Play Game
-2. View Score
-3. View Game History
-4. View Statistics
-5. Exit
+Enter your choice (rock/paper/scissors): rock
 
-Enter your choice: 1
+----------------------------
+Your choice     : rock
+Computer choice : scissors
+Result          : You Win!
+----------------------------
 
-Enter rock, paper, or scissors: rock
+========== SCORE ==========
+Your Score     : 1
+Computer Score : 0
+Draws          : 0
+============================
+🧪 Testing
 
-You chose: rock
-Computer chose: scissors
-You win!
-```
+The program can be tested using different combinations:
 
-## 10. Future Improvements
+Player Choice	Computer Choice	Result
+Rock	Rock	Draw
+Rock	Paper	Computer Wins
+Rock	Scissors	Player Wins
+Paper	Rock	Player Wins
+Paper	Paper	Draw
+Paper	Scissors	Computer Wins
+Scissors	Rock	Computer Wins
+Scissors	Paper	Player Wins
+Scissors	Scissors	Draw
+
+Invalid inputs are also tested to make sure the program asks the user to enter a valid choice.
+
+🔮 Future Enhancements
 
 The project can be improved in the future by adding:
 
-* Graphical user interface
-* Different game modes
-* Player names
-* Sound effects
-* More detailed statistics
-* Multiplayer mode
+Graphical User Interface (GUI)
+Multiple players
+Difficulty levels
+Permanent score storage
+Player names
+Game statistics
+Sound effects
+Animations
+Online multiplayer mode
+📚 Learning Outcomes
 
-## 11. Conclusion
+Through this project, the following Python concepts were practiced:
 
-The Rock Paper Scissors project demonstrates the use of basic Python programming concepts such as functions, classes, conditional statements, loops, modules, file handling, JSON, and input validation.
+Variables
+Input and output
+Conditional statements
+Loops
+Functions
+Classes and objects
+Random module
+Python modules
+Input validation
+File organization
+Basic testing
+👨‍💻 Project
 
-The project also demonstrates how a Python program can be divided into multiple modules to make the code easier to understand and maintain.
+Project: Rock Paper Scissors Game
+Language: Python
+Platform: VITyarthi Project
+Repository: GitHub
 
